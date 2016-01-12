@@ -1,0 +1,32 @@
+Decoded answers
+
+Whitespace
+    Spaces FTW
+Methods defined
+    In prototype: Stuff.prototype.work = ...
+Multi-line lists (arrays, objects, arguments)
+    Comma at the beginning
+Extending prototype of built-in objects
+    That is inherently evil
+Semicolons
+    All the time
+Comparison
+    Mixed, as necessary
+Closures
+    Only when necessary
+Preprocessing
+    Pure JS
+Array length caching
+    Preprocessor handles this for me
+Where
+    Both
+Array iteration
+    Indexed (for i=0 or while)
+Inheritance
+    Using an abstraction: extend(Child, Parent) or similar
+Private names
+    Underscore(s) at the beginning
+Variable declaration
+    At the beginning of a function
+Object iteration
+    Functional ($.each or similar)

@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "todda"
+    },
+    "todda": {
+      "applicationId": "2ns2iZPt69bal2T4WOhrSh9QgySteefTwgIi7ugU"
+    }
+  }
+}
