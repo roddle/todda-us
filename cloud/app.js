@@ -17,7 +17,7 @@ var basicAuth = express.basicAuth('todluv','44Mags95');
 // The information showed about the poster
 var userEmail = 'todd@thehomie.com';
 var userDisplayName = 'Todd Anderson';
-var userDescription = 'Time and tide wait for none.';
+var userDescription = 'Software Engineer';
 
 // information about this site
 var title = 'Todd Anderson | software | surf';

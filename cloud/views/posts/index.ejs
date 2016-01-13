@@ -1,24 +1,74 @@
 <!-- Include the header partial -->
 <% include ../_header %>
 
-<!-- content -->
-<div class="sidebar">
-    <div class="picture">
-        <% var hash = hex_md5(userEmail); %>
-      	<img src=<%= 'https://secure.gravatar.com/avatar/' + hash + '?size=220&default=https%3A%2F%2Fwww.parse.com%2Fimages%2Faccounts%2Fno_avatar.png' %> />  </div>
-  	<div class="username"><%= userDisplayName %></div>
-  	<div class="blog_description"><%= userDescription %></div>
-</div>
-  	
-<div class="main_content">
-  	<% posts.forEach(function(post) { %>
-  		<div class="post_link">
-	  		<h1><a href="<%= '/posts/' + post.id %>"><%= post.get("title") %></a></h1>
-	  		<h5><%= formatTime(post.createdAt) %></h5>
-	  		<p><%- snippet(post.get("body"), 210) %></p>
-  		</div>
-    <% }) %>
-</div>
+  <!-- content -->
+  <!-- Page Wrapper -->
+  <div id="page-wrapper">
+
+  <!-- Header -->
+  <header id="header" class="alt">
+    <h1><a href="index.html">Todd Anderson | Software Engineer</a></h1>
+    
+  </header>
+
+  <!-- Banner -->
+  <section id="banner">
+    <div class="inner">
+      <div class="logo"><span class="icon fa-coffee"></span></div>
+      <h2>Todd Anderson</h2>
+      <p>Who is Todd Anderson? See <a href="https://www.linkedin.com/in/todluv">my LinkedIn Page</a> or scroll down for a teaser.</p>
+      <ul class="contact">
+          <li class="fa-envelope"><a href="#">hello@todda.us</a></li>
+          <li class="fa-home">
+              San Francisco, CA<br />
+              Santa Cruz, CA
+          </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Wrapper -->
+  <section id="wrapper">
+    <!-- One -->
+      <section id="one" class="wrapper spotlight style1">
+        <div class="inner">
+          <a href="#" class="image"><img src="../images/work-civinomics.png" alt="" /></a>
+          <div class="content">
+            <h2 class="major">Work Highlight: Civinomics</h2>
+            <p>Created iPad app for internal use canvassing public for surveys. Worked with founding team to ideate, build and test the webservice using LEAN startup methods.</p>
+            <p>In January of 2012 I joined the founding team of Civinomics. They'd just landed their first major survey contract and needed a custom presentation app working on an iPad ASAP. While I hadn't yet published an app on an iOS device, I was able to find a solution and deliver on it in 6 weeks. We were able to fulfill the contract and had great conversion numbers to boot. This led to more work and a couple years of fulfilling development work with a great team.</p>
+            <a href="https://www.civinomics.com" class="special">Visit Civinomics</a>
+          </div>
+        </div>
+      </section>
+
+    <!-- Two -->
+      <section id="two" class="wrapper alt spotlight style2">
+        <div class="inner">
+          <a href="#" class="image"><img src="../images/work-beeline.png" alt="" /></a>
+          <div class="content">
+            <h2 class="major">Work Highlight: Beeline Reader</h2>
+            <p>Brought product from idea to reality using a javascript bookmarklet prototype and coloring algorithm.</p>
+            <p>In September of 2010 the inventor of this great reading technology was recommended to me for development work. He had already worked with a different developer for a year, trying to get a satisfactory demonstration app working, to no avail. I was able to produce a satisfactory prototype for Nicholas in just 6 weeks, and Beeline Reader has been able to take off since: 1st place Stanford BASES $100K Challenge, iOS Dev Camp award, Dell Ed-Tech Startup Finalist, GIZMODO, FastCo.Design, The Verge, Y Combinator</p>
+            <a href="http://www.beelinereader.com/" class="special">Visit Beeline Reader</a>
+          </div>
+        </div>
+      </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper alt spotlight style3">
+      <div class="inner">
+        <a href="#" class="image"><img src="../images/work-t9space-logo.gif" alt="" /></a>
+        <div class="content">
+          <h2 class="major">Work Highlight: T9Space</h2>
+          <p>Created mobilizing browsing engine that resulted in explosion of user base, created a lightweight social network with embedded chat and translation services empowering users to communicate internationally with each other.</p>
+          <p>T9Space.com was originally THE only way one could use MySpace.com via a mobile phone. Soon many of the other popular social networks at the time could also be used by people who had basic mobile phones. A global audience grew and T9space.com had a lot of fans. I came on board, learned the system and as one of my first projects, created a browsing engine based on the interpreters that had been made for individual sites. Our traffic exploded, and we had to move our servers onto Amazon's AWS. At it's hight of use, T9Space had around 400,000 unique visitors per month, it was popular in many countries.</p>
+          <a href="https://web.archive.org/web/20100701185035/http://t9space.com/" class="special">Visit T9Space</a>
+        </div>
+      </div>
+    </section>
+
+  </section>
 
 <!-- Include the footer partial -->
 <% include ../_footer %>
